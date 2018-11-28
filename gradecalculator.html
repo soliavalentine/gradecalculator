@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="gradecalculator.js"></script>
+    <link rel="stylesheet" href="gradecalculator.css">
+</head>
+<body>
+<h1>Final Grade Calculator</h1>
+<table id="table">
+    <tr>
+        <td>
+            Homework Grades:
+        </td>
+        <td>
+            Homework Weight:
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="Homework" value="90,80,90">
+        </td>
+        <td>
+            <input type="text"id="Homework Weight" value="20">
+        </td>
+
+    </tr>
+    <tr>
+        <td>Classwork Grades:
+        </td>
+        <td>
+            Classwork Weight:
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text"id="Classwork" value="90,80,90">
+        </td>
+        <td>
+            <input type="text"id="Classwork Weight" value = "20">
+        </td>
+    <tr>
+        <td>
+            Participation Grades:
+        </td>
+        <td>
+            Participation Weight:
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="Participation" value="90,80,90">
+        </td>
+        <td>
+            <input type="text"id="Participation Weight" value="20">
+        </td>
+
+    </tr>
+    <tr>
+        <td>Test Grades:
+        </td>
+        <td>
+            Test Weight:
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text"id="Test" value="90,80,90">
+        </td>
+        <td>
+            <input type="text"id="Test Weight" value = "20">
+        </td>
+    <tr>
+        <td>
+            Project Grades:
+        </td>
+        <td>
+            Project Weight:
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="Project" value="90,80,90">
+        </td>
+        <td>
+            <input type="text"id="Project Weight" value="20">
+        </td>
+
+    </tr>
+
+
+
+</table>
+<h2>
+<button onclick="calculateCurrentGrade()" class="w3-container w3-indigo w3-hover-white
+w3-border w3-border-white w3-round" id="button1">Calculate my Grade!</button>
+    <div id="grade"></div>
+    <div id="error"></div>
+</h2>
+<table>
+    <tr>
+        <td>
+            My Desired Grade:
+        </td>
+        <td>
+            Weight of Final:
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="gradeWanted"value="90">
+        </td>
+        <td>
+            <input type="text" id="finalWeight"value="20">
+        </td>
+
+    </tr>
+</table>
+
+<br>
+
+<h2>
+    <button onclick="finalGrade()" class="w3-container w3-indigo w3-hover-white
+w3-border w3-border-white w3-round" id="button2">Go!</button>
+    <div id="final"></div>
+    <div id="error2"></div>
+</h2>
+</body>
+</html>
