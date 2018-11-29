@@ -20,12 +20,64 @@ function calculateCurrentGrade() {
     var pWeight = change("Participation Weight");
     var tWeight = change("Test Weight");
     var prWeight = change("Project Weight");
+
     var total = hwWeight + cwWeight + pWeight + tWeight + prWeight;
     var roundGrade = (grade).toFixed(2);
     if(total>100 || total<0){
         document.getElementById("error").innerHTML = "Please enter a valid values"
     }
     else {
+        if(homeworkAvg>=90){
+                document.getElementById("Homework").style.backgroundColor="green";
+        } if(classworkAvg>=90){
+            document.getElementById("Classwork").style.backgroundColor="green";
+        } if(testAvg>=90){
+            document.getElementById("Test").style.backgroundColor="green";
+        } if(participationAvg>=90){
+            document.getElementById("Participation").style.backgroundColor="green";
+        } if(projectAvg>=90){
+            document.getElementById("Project").style.backgroundColor="green";
+        } if(homeworkAvg<90 && homeworkAvg>=80){
+            document.getElementById("Homework").style.backgroundColor="blue";
+        } if(classworkAvg<90 && classworkAvg>=80){
+            document.getElementById("Classwork").style.backgroundColor="blue";
+        } if(testAvg<90 && testAvg>=80){
+            document.getElementById("Test").style.backgroundColor="blue";
+        } if(participationAvg<90 && participationAvg>=80){
+            document.getElementById("Participation").style.backgroundColor="blue";
+        } if(projectAvg<90 && projectAvg>=80){
+            document.getElementById("Project").style.backgroundColor="blue";
+        } if(homeworkAvg<80 && homeworkAvg>=70){
+            document.getElementById("Homework").style.backgroundColor="yellow";
+        } if(classworkAvg<80 && classworkAvg>=70){
+            document.getElementById("Classwork").style.backgroundColor="yellow";
+        } if(testAvg<80 && testAvg>=70){
+            document.getElementById("Test").style.backgroundColor="yellow";
+        } if(participationAvg<80 && participationAvg>=70){
+            document.getElementById("Participation").style.backgroundColor="yellow";
+        } if(projectAvg<80 && projectAvg>=70){
+            document.getElementById("Project").style.backgroundColor="yellow";
+        } if(homeworkAvg<70 && homeworkAvg>=60){
+            document.getElementById("Homework").style.backgroundColor="orange";
+        } if(classworkAvg<70 && classworkAvg>=60){
+            document.getElementById("Classwork").style.backgroundColor="orange";
+        } if(testAvg<70 && testAvg>=60){
+            document.getElementById("Test").style.backgroundColor="orange";
+        } if(participationAvg<70 && participationAvg>=60){
+            document.getElementById("Participation").style.backgroundColor="orange";
+        } if(projectAvg<70 && projectAvg>=60){
+            document.getElementById("Project").style.backgroundColor="orange";
+        } if(homeworkAvg<60){
+            document.getElementById("Homework").style.backgroundColor="red";
+        } if(classworkAvg<60){
+            document.getElementById("Classwork").style.backgroundColor="red";
+        } if(testAvg<60){
+            document.getElementById("Test").style.backgroundColor="red";
+        } if(participationAvg<60){
+            document.getElementById("Participation").style.backgroundColor="red";
+        } if(projectAvg<60){
+            document.getElementById("Project").style.backgroundColor="red";
+    }
         document.getElementById("grade").innerHTML = "Your current grade is: " + roundGrade;
         return roundGrade;
     }
